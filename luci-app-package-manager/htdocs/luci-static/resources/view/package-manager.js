@@ -1159,7 +1159,7 @@ return view.extend({
 	},
 
 	render(listData) {
-			const checkUpdateNeeded = function() {
+ 		const checkUpdateNeeded = function() {
             return Promise.all([
                 L.resolveDefault(fs.stat('/tmp/opkg-lists'), null),
                 L.resolveDefault(fs.read('/tmp/resolv.conf.d/resolv.conf.auto'), '')
