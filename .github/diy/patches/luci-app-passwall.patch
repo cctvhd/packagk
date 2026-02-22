@@ -101,7 +101,8 @@
  config PACKAGE_$(PKG_NAME)_INCLUDE_Trojan_Plus
  	bool "Include Trojan-Plus"
 -	select PACKAGE_trojan-plus
- 	default y
+-	default y
++	default y if aarch64||i386||x86_64
  
  config PACKAGE_$(PKG_NAME)_INCLUDE_tuic_client
  	bool "Include tuic-client"
